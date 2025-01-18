@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #8FE388;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 70vh; /*vh as much as our page is visible 70% of it will be in conatiner */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.game{
+    height:60vmin;/* 1 % of viewport smaller dimension viewport ka 60%*/
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;/* if there is no space it will come to next line*/
+    justify-content: center;/* game box center*/
+    align-items: center;/* game box center*/
+    gap:1.5vmin;/* to create space between divs we use gap*/
+}
+
+.box{
+    height: 18vmin;/* every box is given vmin*/
+    width: 18vmin;
+    border-radius: 1rem;/* box border will become curve*/
+    border: none;/* to remove border*/
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);/* we are using rgba to set the opacity it will display black shadow*/
+    font-size: 8vmin;
+    color: #303A2B;
+   background-color: #ffffc7; /* pallet color backfround color will not change after disabling the button */
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color:#58FCEC ;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color:#58FCEC ;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color:#c7ffc9;
+    font-size: 8vmin;
+}   
+.msg-container{
+    height: 70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
